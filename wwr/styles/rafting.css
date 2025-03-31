@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: var(--light-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+}
+
+article {
+    display: flex;
+    width: 71.7%;
+    margin-left: 2rem;
+    position: absolute;
+    bottom: 90px;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.history {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.history h2 {
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.adventure {
+    margin-bottom: 40px;
+}
+
+.adventure h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid var(--secondary-color);
+    margin-top: 30px;
+}
+
+footer p {
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-links>a>img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
