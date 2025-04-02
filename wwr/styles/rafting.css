@@ -31,12 +31,16 @@ h3 {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
     align-items: center;
     padding: 20px 0;
     margin-bottom: 30px;
     border-bottom: 2px solid var(--secondary-color);
+}
+
+nav {
+    display: flex;
 }
 
 .logo img {
@@ -87,15 +91,24 @@ article {
     border-radius: 8px;
 }
 
-.history {
-    margin-bottom: 40px;
-    padding: 20px;
+.section {
+    margin-bottom: 68px;
+    padding: 25px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.history h2 {
+.caption {
+    text-align: center;
+}
+
+.section-contents {
+    display: flex;
+    gap: 1.7rem;
+}
+
+.section h2 {
     margin-bottom: 15px;
     color: var(--secondary-color);
 }
@@ -108,6 +121,10 @@ article {
     margin-bottom: 20px;
     text-align: center;
     color: var(--primary-color);
+}
+
+figcaption {
+    text-align: center;
 }
 
 .gallery {
@@ -123,10 +140,16 @@ article {
 }
 
 footer {
+    width: 100%;
     text-align: center;
     padding: 20px;
     border-top: 2px solid var(--secondary-color);
     margin-top: 30px;
+}
+
+.footer-contents {
+    display: flex;
+    justify-content: space-between;
 }
 
 footer p {
